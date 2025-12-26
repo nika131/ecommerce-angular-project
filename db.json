@@ -1,0 +1,188 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "sku": "SF001",
+      "name": "The Minimalist Sofa",
+      "price": 999,
+      "oldPrice": 1200,
+      "currency": "USD",
+      "category": "Furniture",
+      "isNew": true,
+      "rating": 4.5,
+      "reviewCount": 12,
+      "description": "A modern, clean-lined sofa designed for comfort and elegance. Upholstered in premium, durable fabric.",
+      "imageUrl": "assets/images/8.png"
+    },
+    {
+      "id": "2",
+      "sku": "CH005",
+      "name": "Scandinavian Accent Chair",
+      "price": 250,
+      "oldPrice": null,
+      "currency": "USD",
+      "category": "Seating",
+      "isNew": false,
+      "rating": 4.8,
+      "reviewCount": 25,
+      "description": "Ergonomically designed chair with a curved back and natural wood finish.",
+      "imageUrl": "assets/images/7.png"
+    },
+    {
+      "id": "3",
+      "sku": "LB010",
+      "name": "Industrial Floor Lamp",
+      "price": 129.99,
+      "oldPrice": 150,
+      "currency": "USD",
+      "category": "Lighting",
+      "isNew": true,
+      "rating": 4,
+      "reviewCount": 8,
+      "description": "Tall, adjustable floor lamp with a matte black finish and brass accents.",
+      "imageUrl": "assets/images/6.png"
+    },
+    {
+      "id": "4",
+      "sku": "RG022",
+      "name": "Geometric Wool Rug",
+      "price": 350,
+      "oldPrice": null,
+      "currency": "USD",
+      "category": "Decor",
+      "isNew": false,
+      "rating": 4.6,
+      "reviewCount": 33,
+      "description": "Hand-woven wool rug featuring a contemporary geometric pattern. Durable and soft.",
+      "imageUrl": "assets/images/5.png"
+    },
+    {
+      "id": "5",
+      "sku": "TB007",
+      "name": "Round Marble Side Table",
+      "price": 199.5,
+      "oldPrice": 240,
+      "currency": "USD",
+      "category": "Furniture",
+      "isNew": false,
+      "rating": 4.2,
+      "reviewCount": 15,
+      "description": "Elegant side table with a solid marble top and slender metal legs.",
+      "imageUrl": "assets/images/4.png"
+    },
+    {
+      "id": "6",
+      "sku": "MT003",
+      "name": "Ceramic Matte Tealight Holder",
+      "price": 15,
+      "oldPrice": null,
+      "currency": "USD",
+      "category": "Decor",
+      "isNew": true,
+      "rating": 4.9,
+      "reviewCount": 5,
+      "description": "Small ceramic holder for tealights, available in multiple matte finishes.",
+      "imageUrl": "assets/images/3.png"
+    },
+    {
+      "id": "7",
+      "sku": "CM012",
+      "name": "Large Convex Mirror",
+      "price": 85,
+      "oldPrice": 95,
+      "currency": "USD",
+      "category": "Decor",
+      "isNew": false,
+      "rating": 4.4,
+      "reviewCount": 18,
+      "description": "Modern circular mirror with a subtle convex curve to enhance light and space.",
+      "imageUrl": "assets/images/3.png"
+    },
+    {
+      "id": "8",
+      "sku": "PD044",
+      "name": "Silk Cushion Set (2 Pack)",
+      "price": 60,
+      "oldPrice": null,
+      "currency": "USD",
+      "category": "Seating",
+      "isNew": false,
+      "rating": 4.7,
+      "reviewCount": 40,
+      "description": "Luxurious silk cushion set to add a touch of color and comfort to your sofa.",
+      "imageUrl": "assets/images/1.png"
+    },
+    {
+      "id": "9",
+      "sku": "KT001",
+      "name": "Bamboo Kitchen Trolley",
+      "price": 175,
+      "oldPrice": null,
+      "currency": "USD",
+      "category": "Furniture",
+      "isNew": true,
+      "rating": 4.1,
+      "reviewCount": 7,
+      "description": "Sustainable bamboo trolley with wheels, perfect for kitchen storage or as a bar cart.",
+      "imageUrl": "assets/images/9.png"
+    },
+    {
+      "id": "10",
+      "sku": "OF009",
+      "name": "Adjustable LED Desk Lamp",
+      "price": 55,
+      "oldPrice": 70,
+      "currency": "USD",
+      "category": "Lighting",
+      "isNew": false,
+      "rating": 4.3,
+      "reviewCount": 21,
+      "description": "Energy-efficient LED lamp with flexible arm and dimmable light settings.",
+      "imageUrl": "assets/images/10.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": "10",
+      "name": "Furniture",
+      "slug": "furniture",
+      "icon": "assets/images/1.png"
+    },
+    {
+      "id": "11",
+      "name": "Lighting",
+      "slug": "lighting",
+      "icon": "assets/images/1.png"
+    },
+    {
+      "id": "12",
+      "name": "Decor",
+      "slug": "decor",
+      "icon": "assets/images/1.png"
+    },
+    {
+      "id": "13",
+      "name": "Seating",
+      "slug": "seating",
+      "icon": "assets/images/1.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "user@test.com",
+      "password": "password",
+      "token": "mock-jwt-token-12345"
+    }
+  ],
+  "featuredItems": [
+    {
+      "type": "banner",
+      "title": "Unparalleled Style",
+      "subtitle": "Shop New Arrivals",
+      "link": "/shop",
+      "id": "b4a6"
+    }
+  ],
+  "orders": []
+}

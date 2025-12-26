@@ -1,0 +1,81 @@
+.main-header {
+  border-bottom: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-bar {
+  background-color: #141718;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #141718;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6c7275;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #141718;
+  font-weight: 600;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons a, .nav-icons button {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #141718;
+}
+
+.nav-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #141718;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+  line-height: 1;
+}

@@ -1,0 +1,31 @@
+<div class="homepage-container">
+    <section class="hero-banner">
+        <div class="hero-content">
+            <span class="badge">New Collection 2025</span>
+            <h1>Unparalleled Style.<br>Shop New Arrivals.</h1>
+            <p>Discover the latest collections curated for modern living.</p>
+            <button class="btn-primary" appHighlightOnHover="#333">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <span class="line"></span>
+        </div>
+        
+        <div class="product-grid">
+          <div *ngFor="let product of featuredProducts" class="product-card">
+            <div class="product-image">
+              <img [src]="'/' + product.imageUrl" [alt]="product.name">
+            </div>
+            <div class="product-info">
+              <h3>{{ product.name }}</h3>
+              <p class="category">{{ product.category }}</p>
+              <p class="price">${{ product.price | number:'1.2-2' }}</p>
+              <button class="btn-outline" appHighlightOnHover="rgba(0,0,0,0.05)">View Details</button>
+            </div>
+          </div>
+        </div>
+    </section>
+</div>

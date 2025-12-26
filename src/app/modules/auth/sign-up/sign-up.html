@@ -1,0 +1,47 @@
+<div class="form-container">
+    <div class="form-content">
+        <h1>Create Account</h1>
+        <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+          
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" formControlName="firstName">
+            <div *ngIf="firstNameControl.invalid && firstNameControl.touched" class="error-message">
+              <span>Name is required.</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="email" placeholder="Your Email" formControlName="email">
+            <div *ngIf="emailControl.invalid && emailControl.touched" class="error-message">
+              <span *ngIf="emailControl.errors?.['required']">Email is required.</span>
+              <span *ngIf="emailControl.errors?.['email']">Enter a valid email address.</span>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <input type="password" placeholder="Password (min 6 characters)" formControlName="password">
+            <div *ngIf="passwordControl.invalid && passwordControl.touched" class="error-message">
+              <span *ngIf="passwordControl.errors?.['required']">Password is required.</span>
+              <span *ngIf="passwordControl.errors?.['minlength']">Password must be at least 6 characters.</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Confirm Password" formControlName="confirmPassword">
+            <div *ngIf="confirmPasswordControl.invalid && confirmPasswordControl.touched" class="error-message">
+              <span>Confirmation is required.</span>
+            </div>
+          </div>
+          
+          <div *ngIf="signUpForm.errors?.['passwordMismatch'] && signUpForm.get('confirmPassword')?.touched" class="error-message form-error">
+              Passwords do not match.
+          </div>
+          
+          <button type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+        </form>
+        
+        <p class="signup-link">
+          Already have an account? <a routerLink="/auth/sign-in">Sign In</a>
+        </p>
+    </div>
+</div>

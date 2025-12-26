@@ -1,0 +1,30 @@
+<header class="main-header">
+    <div class="top-bar">
+        <p>Free shipping on orders over $50</p>
+    </div>
+    <nav class="main-nav">
+        <div class="logo">
+          <a routerLink="/">3legant.</a>
+        </div>
+        
+        <ul class="nav-links">
+          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a routerLink="/shop">Shop</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-icons">
+          <a routerLink="/auth/sign-in" *ngIf="!authService.isAuthenticated()">
+            <img src="/assets/icons/user.svg" alt="Sign In">
+          </a>
+          <button *ngIf="authService.isAuthenticated()" (click)="signOut()">
+            Sign Out
+          </button>
+          <a routerLink="/shop/cart">
+            <img src="/assets/icons/cart.svg" alt="Cart">
+            Cart ({{cartItemCount$ | async}})
+          </a>
+        </div>
+    </nav>
+</header>

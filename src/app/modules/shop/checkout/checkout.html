@@ -1,0 +1,16 @@
+<div class="checkout-container">
+      <h2>Secure Checkout</h2>
+      <p class="total-summary">Order Total: \${{ cartService.getCartTotal() | number:'1.2-2' }}</p>
+      
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <h3>Shipping Details</h3>
+        <input type="text" placeholder="Full Name" formControlName="fullName">
+        <input type="email" placeholder="Email" formControlName="email">
+        <input type="text" placeholder="Address" formControlName="address">
+        
+        <h3>Payment Information</h3>
+        <input type="text" placeholder="Card Number" formControlName="cardNumber">
+        
+        <button type="submit" [disabled]="checkoutForm.invalid">Place Order</button>
+      </form>
+    </div>
