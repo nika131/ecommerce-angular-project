@@ -12,7 +12,7 @@
       "rating": 4.5,
       "reviewCount": 12,
       "description": "A modern, clean-lined sofa designed for comfort and elegance. Upholstered in premium, durable fabric.",
-      "imageUrl": "assets/images/8.png"
+      "imageUrl": "./assets/images/8.png"
     },
     {
       "id": "2",
@@ -138,7 +138,7 @@
       "rating": 4.3,
       "reviewCount": 21,
       "description": "Energy-efficient LED lamp with flexible arm and dimmable light settings.",
-      "imageUrl": "assets/images/10.png"
+      "imageUrl": "./assets/images/10.png"
     }
   ],
   "categories": [
@@ -173,6 +173,13 @@
       "email": "user@test.com",
       "password": "password",
       "token": "mock-jwt-token-12345"
+    },
+    {
+      "id": 5038,
+      "firstName": "nika",
+      "email": "nika.megr@gmail.com",
+      "password": "123456",
+      "token": "mock-token-149216"
     }
   ],
   "featuredItems": [

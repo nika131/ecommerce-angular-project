@@ -23,7 +23,9 @@
               <h3>{{ product.name }}</h3>
               <p class="category">{{ product.category }}</p>
               <p class="price">${{ product.price | number:'1.2-2' }}</p>
+              <a [routerLink]="['/shop/product', product.id]">
               <button class="btn-outline" appHighlightOnHover="rgba(0,0,0,0.05)">View Details</button>
+              </a>
             </div>
           </div>
         </div>
